@@ -1,0 +1,40 @@
+
+$red: #fa5252;
+$orange:#fd7e14;
+$yellow:#fcc419;
+$green:#40c057;
+$violet:#7950f2;
+
+@mixin square($size){
+    $calculated:32px * $size;
+    width:$calculated;
+    height:$calculated;
+}
+
+.SassComponent{
+  display:flex;
+  .box {
+    background:red;
+    cursor:pointer;
+    transition: all 0.3s ease-in;
+    &.red{
+        background: $red;
+        @include square(1);
+    }
+    &.orange{
+        background: $orange;
+        @include square(2);
+    }
+    &.yellow{
+        background: $yellow;
+        @include square(3);
+    }
+    &.green{
+        background: $green;
+        @include square(4);
+    }
+    &:hover{
+        background: $violet;
+    }
+  }
+}

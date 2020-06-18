@@ -1,0 +1,10 @@
+/*const { createProxyMiddleware } = require('http-proxy-middleware');
+module.exports = function(app) {
+  app.use(createProxyMiddleware('/api',{
+      target: 'http://localhost:5000/',
+      changeOrigin: true,
+    })
+  );
+};
+*/
+// 이거는 미들웨어 그냥 해놓은거니까 아직쓰지말자
